@@ -39,6 +39,12 @@ body {
   padding: 20px;
 }
 
+a {
+  color: var(--accent);
+  font-size: 11px;
+  flex-shrink: 0;
+}
+
 .container {
   width: 100%;
   max-width: 580px;

@@ -6,6 +6,16 @@
   <meta name="description" content="3907 - Public Security Advisories and Disclosures">
   <title>3907 // disclosures</title>
   <link rel="stylesheet" href="../style.css">
+  <style>
+    /* Disclosures not yet public: adjust --pending-opacity here (1 = fully visible),
+       or remove the "disclosure-item--pending" class from a card once it's live. */
+    .blog-container {
+      --pending-opacity: 0.45;
+    }
+    .disclosure-item--pending {
+      opacity: var(--pending-opacity);
+    }
+  </style>
 </head>
 <body>
 
@@ -22,12 +32,12 @@
       
       <section class="blog-header">
         <h2>Latest</h2>
-        <span class="disclosure-host">Disclosure date // No. // Vulnerability // Write-up</span>
+        <span class="disclosure-host"><a>Disclosure date /</a>/ No. // Vulnerability // Write-up</span>
       </section>
 
       <div class="disclosure-list">
 
-        <a href="https://github.com/3907-bh/unlock-insecure-[redacted]" class="disclosure-item" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/3907-bh/unlock-insecure-[redacted]" class="disclosure-item disclosure-item--pending" target="_blank" rel="noopener noreferrer">
           <div class="disclosure-content">
             <span class="disclosure-id">31/7 [0x3]</span>
             <span class="disclosure-title">Unauthenticated signing with operator keys</span>
@@ -35,7 +45,7 @@
           <span class="disclosure-host">github.com/3907-bh/unlock-insecure-[redacted]</span>
         </a>
 
-        <a href="https://github.com/3907-bh/pffffummm" class="disclosure-item" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/3907-bh/pffffummm" class="disclosure-item disclosure-item--pending" target="_blank" rel="noopener noreferrer">
           <div class="disclosure-content">
             <span class="disclosure-id">24/7 [0x2]</span>
             <span class="disclosure-title">Unauthenticated Firebase custom-token mint for arbitrary UID leading to cross-session read/write of PayPal's production checkout message bus</span>
